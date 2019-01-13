@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://cohthrax.xyz/"/>
+  <link href="http://cothrax.xyz/"/>
   <updated>2019-01-12T08:47:03.742Z</updated>
-  <id>http://cohthrax.xyz/</id>
+  <id>http://cothrax.xyz/</id>
   
   <author>
     <name>Cothrax</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Graph Realization Problem</title>
-    <link href="http://cohthrax.xyz/2019/01/10/graph-realization-problem/"/>
-    <id>http://cohthrax.xyz/2019/01/10/graph-realization-problem/</id>
+    <link href="http://cothrax.xyz/2019/01/10/graph-realization-problem/"/>
+    <id>http://cothrax.xyz/2019/01/10/graph-realization-problem/</id>
     <published>2019-01-10T14:42:44.000Z</published>
     <updated>2019-01-12T08:47:03.742Z</updated>
     
@@ -31,17 +31,17 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="http://cohthrax.xyz/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="http://cothrax.xyz/categories/Algorithm/"/>
     
     
-      <category term="Graph Theory" scheme="http://cohthrax.xyz/tags/Graph-Theory/"/>
+      <category term="Graph Theory" scheme="http://cothrax.xyz/tags/Graph-Theory/"/>
     
   </entry>
   
   <entry>
     <title>Fight Back</title>
-    <link href="http://cohthrax.xyz/2018/06/27/after-cee/"/>
-    <id>http://cohthrax.xyz/2018/06/27/after-cee/</id>
+    <link href="http://cothrax.xyz/2018/06/27/after-cee/"/>
+    <id>http://cothrax.xyz/2018/06/27/after-cee/</id>
     <published>2018-06-27T09:24:31.000Z</published>
     <updated>2018-07-01T09:10:07.302Z</updated>
     
@@ -54,7 +54,7 @@
     
     </summary>
     
-      <category term="Nothing" scheme="http://cohthrax.xyz/categories/Nothing/"/>
+      <category term="Nothing" scheme="http://cothrax.xyz/categories/Nothing/"/>
     
     
   </entry>

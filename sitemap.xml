@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cothrax.xyz/2019/01/10/graph-realization-problem/</loc>
+    
+    <lastmod>2019-01-14T08:25:31.817Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cothrax.xyz/about/index.html</loc>
     
     <lastmod>2019-01-12T10:25:59.156Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://cothrax.xyz/tags/index.html</loc>
     
     <lastmod>2019-01-12T10:25:18.836Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cothrax.xyz/2019/01/10/graph-realization-problem/</loc>
-    
-    <lastmod>2019-01-12T08:47:03.742Z</lastmod>
     
   </url>
   

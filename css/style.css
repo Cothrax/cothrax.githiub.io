@@ -3,6 +3,9 @@ html {
   -moz-tab-size: 4;
   tab-size: 4; }
 
+.with-magic {
+  border-bottom: 1px #93a1a1 solid; }
+
 @font-face {
   font-family: 'Chancery';
   src: url("../fonts/chancery/apple-chancery-webfont.eot");

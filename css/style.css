@@ -4,6 +4,9 @@ html {
   tab-size: 4; }
 
 .with-magic {
+  cursor: pointer; }
+
+.code .with-magic {
   border-bottom: 1px #93a1a1 solid; }
 
 @font-face {

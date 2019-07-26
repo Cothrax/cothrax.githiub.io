@@ -675,7 +675,7 @@ h6 {
   .post .post-content code, .post .post-content pre {
     padding: 7px;
     font-size: 13px;
-    font-family: Consolas, Monaco, Menlo, Consolas, monospace;
+    font-family: monospace, Consolas, Monaco, Menlo;
     background: #f8f5ec; }
   .post .post-content code {
     padding: 3px 5px;

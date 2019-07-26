@@ -9,7 +9,7 @@ function toggle_magic(context, l, r, if_first)
 	var fir = ":eq(" + (l-1).toString() + ")";
 	
 	var a = context.find(".gutter").find(".line" + fir);
-	var b = context.find(".code").find(".line" + fir)
+	var b = context.find(".code").find(".line" + fir);
 	//a.toggleClass("with-magic");
 	b.toggleClass("magic-on");
 	

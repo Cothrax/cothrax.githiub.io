@@ -413,27 +413,27 @@ a {
 
 h1 {
   font-size: 26px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
 
 h2 {
   font-size: 24px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
 
 h3 {
   font-size: 20px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
 
 h4 {
   font-size: 16px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
 
 h5 {
   font-size: 14px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
 
 h6 {
   font-size: 14px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
 
 .container {
   margin: 0 auto;
@@ -483,7 +483,7 @@ h6 {
       position: relative;
       padding-left: 0;
       padding-right: 25px;
-      font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+      font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
       .header .site-navbar .menu .menu-item {
         display: inline-block;
         display: inline-block;
@@ -534,7 +534,7 @@ h6 {
       margin: 0;
       font-size: 27px;
       font-weight: 400;
-      font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+      font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
     .post .post-header .post-link {
       display: inline-block;
       vertical-align: middle;
@@ -586,7 +586,7 @@ h6 {
     width: 200px;
     margin-left: 785px;
     padding: 10px;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial;
     border-radius: 5px;
     background: rgba(248, 245, 236, 0.6);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
@@ -614,22 +614,22 @@ h6 {
       display: none; } }
   .post .post-content h1 {
     font-weight: 400;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
   .post .post-content h2 {
     font-weight: 400;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
   .post .post-content h3 {
     font-weight: 400;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
   .post .post-content h4 {
     font-weight: 400;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
   .post .post-content h5 {
     font-weight: 400;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
   .post .post-content h6 {
     font-weight: 400;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
   .post .post-content .headerlink:hover {
     border-bottom: 0; }
   .post .post-content a {
@@ -906,7 +906,7 @@ h6 {
   .post .post-content .read-more .read-more-link {
     color: #c05b4d;
     font-size: 1.1em;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
     .post .post-content .read-more .read-more-link:hover {
       border-bottom: 1px solid #c05b4d; }
   .post .post-copyright {
@@ -951,7 +951,7 @@ h6 {
   .post .post-footer {
     margin-top: 20px;
     border-top: 1px solid #e6e6e6;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
     .post .post-footer .post-tags {
       padding: 15px 0; }
       .post .post-footer .post-tags a {
@@ -971,7 +971,7 @@ h6 {
       .post .post-footer .post-nav .next {
         font-weight: 600;
         font-size: 18px;
-        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial;
         transition-property: transform;
         transition-timing-function: ease-out;
         transition-duration: 0.3s; }
@@ -1004,7 +1004,7 @@ h6 {
   .pagination .next {
     font-weight: 600;
     font-size: 20px;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial;
     transition-property: transform;
     transition-timing-function: ease-out;
     transition-duration: 0.3s; }
@@ -1033,7 +1033,7 @@ h6 {
     margin: 10px 0;
     color: #8a8a8a;
     text-align: center;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
     .footer .copyright .hexo-link,
     .footer .copyright .theme-link {
       color: #c05b4d; }
@@ -1046,7 +1046,7 @@ h6 {
   margin: 2em 0px;
   max-width: 550px; }
   .archive .archive-title {
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
     .archive .archive-title.tag, .archive .archive-title.category {
       margin: 15px 0; }
     .archive .archive-title .archive-name {
@@ -1059,7 +1059,7 @@ h6 {
       display: none;
       color: #8a8a8a; }
   .archive .collection-title {
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+    font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
     .archive .collection-title .archive-year {
       margin: 15px 0;
       font-weight: 400;
@@ -1102,7 +1102,7 @@ h6 {
 .tag-cloud {
   margin: 2em 0 3em;
   text-align: center;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
   .tag-cloud .tag-cloud-title {
     display: inline-block;
     font-size: 18px;
@@ -1125,7 +1125,7 @@ h6 {
 .categories {
   margin: 2em 0 3em;
   text-align: center;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
   .categories .categories-title {
     display: inline-block;
     font-size: 18px;
@@ -1386,7 +1386,7 @@ h6 {
       border-bottom: 1px solid #f8f5ec; }
     .mobile-menu .mobile-menu-list a {
       font-size: 18px;
-      font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+      font-family: Athelas, STHeiti, Microsoft Yahei, sans-serif, "Source Sans Pro", "Helvetica Neue", Arial; }
       .mobile-menu .mobile-menu-list a:hover {
         color: #c05b4d; }
 

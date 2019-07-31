@@ -57,10 +57,10 @@ $(document).ready(function(){
 });
 
 
-	
-$(document).ready(function(){
-	element1 = "<span class='line special-line'>..</span>";
-	element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
+function enable_foldall()
+{
+	var element1 = "<span class='line special-line'>..</span>";
+	var element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
 	$('.fold-code .gutter>pre').append(element1);
 	$('.fold-code .code>pre').append(element2);
 
@@ -74,4 +74,8 @@ $(document).ready(function(){
 	});
 	$(".fold-code .special-line").css("display","none");
 	$('.fold-code pre>*').toggle();
+};
+	
+$(document).ready(function(){
+	enable_foldall();
 });

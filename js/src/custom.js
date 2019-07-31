@@ -63,6 +63,7 @@ function enable_foldall()
 	var element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
 	$('.fold-code .gutter>pre').append(element1);
 	$('.fold-code .code>pre').append(element2);
+	alert('hello');
 
 	$(document).on('click', '.fold-code figcaption', function(){
 		$('pre>*', this.parentNode).toggle();

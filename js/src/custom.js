@@ -56,7 +56,8 @@ $(document).ready(function(){
     $("div.fold").css("display","none");
 });
 
-// foldall tag
+
+	
 $(document).ready(function(){
 	element1 = "<span class='line special-line'>..</span>";
 	element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
@@ -71,7 +72,6 @@ $(document).ready(function(){
 	$(document).on('click', '.fold-code .special-line', function(){
 		$('figure pre>*', $(this).parent().closest('.fold-code')).toggle();
 	});
-	
 	$(".fold-code .special-line").css("display","none");
 	$('.fold-code pre>*').toggle();
 });

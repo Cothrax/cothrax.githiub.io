@@ -59,24 +59,22 @@ $(document).ready(function(){
 
 function enable_foldall()
 {
-	var element1 = "<span class='line special-line'>..</span>";
-	var element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
-	$('.fold-code .gutter>pre').append(element1);
-	$('.fold-code .code>pre').append(element2);
-	alert('hello');
+	$(document).ready(function(){
+		var element1 = "<span class='line special-line'>..</span>";
+		var element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
+		$('.fold-code .gutter>pre').append(element1);
+		$('.fold-code .code>pre').append(element2);
+		// alert('hello');
 
-	$(document).on('click', '.fold-code figcaption', function(){
-		$('pre>*', this.parentNode).toggle();
-		// $('br', this.parentNode).slideToggle();
-		// $('.code .line', this.parentNode).slideToggle();
+		$(document).on('click', '.fold-code figcaption', function(){
+			$('pre>*', this.parentNode).toggle();
+			// $('br', this.parentNode).slideToggle();
+			// $('.code .line', this.parentNode).slideToggle();
+		});
+		$(document).on('click', '.fold-code .special-line', function(){
+			$('figure pre>*', $(this).parent().closest('.fold-code')).toggle();
+		});
+		$(".fold-code .special-line").css("display","none");
+		$('.fold-code pre>*').toggle();
 	});
-	$(document).on('click', '.fold-code .special-line', function(){
-		$('figure pre>*', $(this).parent().closest('.fold-code')).toggle();
-	});
-	$(".fold-code .special-line").css("display","none");
-	$('.fold-code pre>*').toggle();
 };
-	
-$(document).ready(function(){
-	enable_foldall();
-});

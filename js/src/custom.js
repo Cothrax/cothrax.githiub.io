@@ -1,4 +1,4 @@
-
+// magic tag
 function toggle_magic(context, l, r, if_first)
 {
 	var range = ":lt(" + r.toString() + "):gt(" + (l-1).toString() + ")";
@@ -45,3 +45,33 @@ function enable_magic(id, l, r)
 		b.toggleClass("with-magic");
 	});
 }
+
+// myfold tag
+$(document).ready(function(){
+    $(document).on('click', '.fold_hider', function(){
+        $('>.fold', this.parentNode).slideToggle();
+        $('>:first', this).toggleClass('open');
+    });
+    //默认情况下折叠
+    $("div.fold").css("display","none");
+});
+
+// foldall tag
+$(document).ready(function(){
+	element1 = "<span class='line special-line'>..</span>";
+	element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
+	$('.fold-code .gutter>pre').append(element1);
+	$('.fold-code .code>pre').append(element2);
+
+	$(document).on('click', '.fold-code figcaption', function(){
+		$('pre>*', this.parentNode).toggle();
+		// $('br', this.parentNode).slideToggle();
+		// $('.code .line', this.parentNode).slideToggle();
+	});
+	$(document).on('click', '.fold-code .special-line', function(){
+		$('figure pre>*', $(this).parent().closest('.fold-code')).toggle();
+	});
+	
+	$(".fold-code .special-line").css("display","none");
+	$('.fold-code pre>*').toggle();
+});

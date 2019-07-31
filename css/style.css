@@ -9,6 +9,16 @@ html {
 .code .with-magic {
   border-bottom: 1px #93a1a1 solid; }
 
+.fold-code figcaption, .fold-code .special-line {
+  cursor: pointer; }
+
+.fold-code figcaption {
+  transition: color 0.5s ease, background-color 0.5s ease; }
+
+.fold-code figcaption:hover {
+  color: #c05b4d !important;
+  background-color: #f8f5ec !important; }
+
 @font-face {
   font-family: 'Chancery';
   src: url("../fonts/chancery/apple-chancery-webfont.eot");

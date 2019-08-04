@@ -78,3 +78,7 @@ function enable_foldall()
 		$('.fold-code pre>*').toggle();
 	});
 };
+
+$(document).on('pjax:end', function(){
+	alert('trigger pjax:end');
+});

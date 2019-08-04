@@ -70,3 +70,7 @@ function enable_foldall()
 
 $(document).ready(enable_foldall);
 $(document).on('pjax:end', enable_foldall);
+
+$(document).on('pjax:end', function(){
+	alert("trigge pjax:end");
+});

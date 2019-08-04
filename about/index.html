@@ -49,8 +49,6 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css">
-
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.10.2">
@@ -93,16 +91,13 @@
 
 
 <script>
-  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":true};
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":false};
 </script>
 
     
   
 
 
-
-  
-  
 
 
 
@@ -121,11 +116,7 @@
   
 
   
-    <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
-  
 
-  
-    <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
   
 
 
@@ -332,12 +323,7 @@
 function enable_mathjax()
 {
 	$.getScript("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML", function(){
-		MathJax.Hub.Config({
-			tex2jax: {
-				inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-				displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-			}});
-		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	MathJax.Hub.Typeset();
 	});
 }
 
@@ -353,8 +339,6 @@ $(document).on('pjax:end', enable_mathjax);
 <script type="text/javascript">
 function enable_valine()
 {
-	$('#vcomments').empty();
-	alert('why');
 	$.getScript("http://cdn1.lncld.net/static/js/3.0.4/av-min.js", function(){
 		$.getScript("http://unpkg.com/valine/dist/Valine.min.js", function(){
 			new Valine({

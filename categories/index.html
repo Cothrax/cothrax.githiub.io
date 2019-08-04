@@ -344,6 +344,7 @@ $(document).on('pjax:end', enable_mathjax);
 function enable_valine()
 {
 	$('#vcomments').empty();
+	alert('why');
 	$.getScript("http://cdn1.lncld.net/static/js/3.0.4/av-min.js", function(){
 		$.getScript("http://unpkg.com/valine/dist/Valine.min.js", function(){
 			new Valine({

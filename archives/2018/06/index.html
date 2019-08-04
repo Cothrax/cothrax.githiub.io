@@ -365,12 +365,18 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 <script>
-MathJax.Hub.Config({
-                tex2jax: {
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-                }});
-MathJax.Hub.Queue(["Typeset",MathJax.Hub]); 
+function enable_mathjax()
+{
+	MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        }});
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+$(document).ready(enable_mathjax);
+$(document).on('pjax:end', enable_mathjax);
 </script>
 
 
@@ -381,16 +387,21 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
     <script src="http://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
     <script src="http://unpkg.com/valine/dist/Valine.min.js"></script>
 <script type="text/javascript">
-    new Valine({
-        el: '#vcomments',
-        notify: false,
-        verify: false,
-        app_id: "jCWlu8lcTs8x49AoTrLX58Jr-gzGzoHsz",
-        app_key: "wJTGsSo2uOeTF4dv4d1aYBAx",
+function enable_valine()
+{
+	new Valine({
+		el: '#vcomments',
+		notify: false,
+		verify: false,
+		app_id: "jCWlu8lcTs8x49AoTrLX58Jr-gzGzoHsz",
+		app_key: "wJTGsSo2uOeTF4dv4d1aYBAx",
 		lang: "en",
-        placeholder: "Leave a comment here",
-        avatar: "hide"
-    });
+		placeholder: "Leave a comment here",
+		avatar: "hide"
+	});
+}
+$(document).ready(enable_valine);
+$(document).on('pjax:end', enable_valine);
 </script>
 
   

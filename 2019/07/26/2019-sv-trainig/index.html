@@ -450,7 +450,6 @@
 <p>I是个后缀自动机？有时间学一下再写。</p>
 <h1 id="第五场"><a href="#第五场" class="headerlink" title="第五场"></a>第五场</h1><p>这次训练已经过半了，不过好像水平并没有什么长进…</p>
 <p>开场秒了A，B扔给了学长，花了一个小时写G，刚写完发现subsequence看成了substring，弃疗。学长用高精度做的B超时了，我想了想乱搞了一个十进制快速幂，少取几次模就过了。因为前一天刚拔了两颗牙脑子不太转的动，之后就划了两小时的水。</p>
-<script>enable_foldall();</script>
 
       
     </div>
@@ -582,12 +581,18 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 <script>
-MathJax.Hub.Config({
-                tex2jax: {
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-                }});
-MathJax.Hub.Queue(["Typeset",MathJax.Hub]); 
+function enable_mathjax()
+{
+	MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        }});
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+$(document).ready(enable_mathjax);
+$(document).on('pjax:end', enable_mathjax);
 </script>
 
 
@@ -598,16 +603,21 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
     <script src="http://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
     <script src="http://unpkg.com/valine/dist/Valine.min.js"></script>
 <script type="text/javascript">
-    new Valine({
-        el: '#vcomments',
-        notify: false,
-        verify: false,
-        app_id: "jCWlu8lcTs8x49AoTrLX58Jr-gzGzoHsz",
-        app_key: "wJTGsSo2uOeTF4dv4d1aYBAx",
+function enable_valine()
+{
+	new Valine({
+		el: '#vcomments',
+		notify: false,
+		verify: false,
+		app_id: "jCWlu8lcTs8x49AoTrLX58Jr-gzGzoHsz",
+		app_key: "wJTGsSo2uOeTF4dv4d1aYBAx",
 		lang: "en",
-        placeholder: "Leave a comment here",
-        avatar: "hide"
-    });
+		placeholder: "Leave a comment here",
+		avatar: "hide"
+	});
+}
+$(document).ready(enable_valine);
+$(document).on('pjax:end', enable_valine);
 </script>
 
   

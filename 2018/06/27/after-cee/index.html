@@ -426,26 +426,51 @@ $(document).on('pjax:end', enable_mathjax);
       
     
 <!-- valine Comments -->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js" data-no-instant=""></script>
+<script src="//unpkg.com/valine@latest/dist/Valine.min.js" data-no-instant=""></script>
 <script type="text/javascript">
-function enable_valine()
-{
-	$.getScript("http://cdn1.lncld.net/static/js/3.0.4/av-min.js", function(){
-		$.getScript("http://unpkg.com/valine/dist/Valine.min.js", function(){
-			new Valine({
-				el: '#vcomments',
-				notify: false,
-				verify: false,
-				app_id: "jCWlu8lcTs8x49AoTrLX58Jr-gzGzoHsz",
-				app_key: "wJTGsSo2uOeTF4dv4d1aYBAx",
-				lang: "en",
-				placeholder: "Leave a comment here",
-				avatar: "hide"
-			});
-		});
-	});
-}
-$(document).ready(enable_valine);
-$(document).on('pjax:end', enable_valine);
+var option = {
+	el: '#vcomments',
+	notify: false,
+	verify: false,
+	app_id: "jCWlu8lcTs8x49AoTrLX58Jr-gzGzoHsz",
+	app_key: "wJTGsSo2uOeTF4dv4d1aYBAx",
+	lang: "en",
+	placeholder: "Leave a comment here",
+	avatar: "hide"
+};
+var valine = new Valine(option);
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
+Waves.displayEffect();
+otherFunction();
+$(document).pjax('a', '#pjax-container', {fragment:'#pjax-container', timeout:8000}).on('pjax:send', function() {
+    $('.page-loading').fadeIn();
+}).on('pjax:complete', function() {
+    $('pre code').each(function(i, block){
+        hljs.highlightBlock(block);
+    });
+    $('code.hljs').each(function(i, block){
+        hljs.lineNumbersBlock(block);
+    });
+}).on('pjax:end', function() {
+	// pjax事件完成之后重新初始化一次valine
+	valine.init(option);
+    $('.page-loading').fadeOut();
+    otherFunction();
+});
+InstantClick.on('change', function() {
+    Waves.displayEffect();
+    $('pre code').each(function(i, block){
+        hljs.highlightBlock(block);
+    });
+    otherFunction();
+    $('code.hljs').each(function(i, block){
+        hljs.lineNumbersBlock(block);
+    });
+    loadMeting(); // <-- reload Meting.JS
+});
+InstantClick.init();
 </script>
 
   

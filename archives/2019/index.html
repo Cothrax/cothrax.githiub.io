@@ -47,6 +47,8 @@
 
 
 
+  <link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css">
+
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.10.2">
@@ -89,13 +91,16 @@
 
 
 <script>
-  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":false};
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":true};
 </script>
 
     
   
 
 
+
+  
+  
 
 
 
@@ -114,7 +119,11 @@
   
 
   
+    <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  
 
+  
+    <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
   
 
 
@@ -374,16 +383,17 @@
 	
 	<script type="text/javascript" src="/js/src/even.js?v=2.10.2"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
-<script>
+	<script>
 function enable_mathjax()
 {
-	MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-        }});
-	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	$.getScript("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML", function(){
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+				displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+			}});
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	});
 }
 
 $(document).ready(enable_mathjax);
@@ -395,20 +405,22 @@ $(document).on('pjax:end', enable_mathjax);
       
     
 <!-- valine Comments -->
-    <script src="http://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="http://unpkg.com/valine/dist/Valine.min.js"></script>
 <script type="text/javascript">
 function enable_valine()
 {
-	new Valine({
-		el: '#vcomments',
-		notify: false,
-		verify: false,
-		app_id: "jCWlu8lcTs8x49AoTrLX58Jr-gzGzoHsz",
-		app_key: "wJTGsSo2uOeTF4dv4d1aYBAx",
-		lang: "en",
-		placeholder: "Leave a comment here",
-		avatar: "hide"
+	$.getScript("http://cdn1.lncld.net/static/js/3.0.4/av-min.js", function(){
+		$.getScript("http://unpkg.com/valine/dist/Valine.min.js", function(){
+			new Valine({
+				el: '#vcomments',
+				notify: false,
+				verify: false,
+				app_id: "jCWlu8lcTs8x49AoTrLX58Jr-gzGzoHsz",
+				app_key: "wJTGsSo2uOeTF4dv4d1aYBAx",
+				lang: "en",
+				placeholder: "Leave a comment here",
+				avatar: "hide"
+			});
+		});
 	});
 }
 $(document).ready(enable_valine);

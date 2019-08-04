@@ -50,11 +50,15 @@ function enable_magic(id, l, r)
 
 function enable_foldall()
 {
-	var element1 = "<span class='line special-line'>..</span>";
-	var element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
-	$('.fold-code .gutter>pre').append(element1);
-	$('.fold-code .code>pre').append(element2);
-	// alert('hello');
+	if($(".fold-code .special-line").length == 0)
+	{
+		
+		var element1 = "<span class='line special-line'>..</span>";
+		var element2 = "<span class='line special-line'><span class='meta'>\"\"\"click me (or caption above) to view the code :D\"\"\"</span></span>";
+		$('.fold-code .gutter>pre').append(element1);
+		$('.fold-code .code>pre').append(element2);
+		// alert('hello');
+	}
 
 	$(document).on('click', '.fold-code figcaption', function(){
 		$('pre>*', this.parentNode).toggle();
@@ -64,8 +68,9 @@ function enable_foldall()
 	$(document).on('click', '.fold-code .special-line', function(){
 		$('figure pre>*', $(this).parent().closest('.fold-code')).toggle();
 	});
-	$(".fold-code .special-line").css("display","none");
-	$('.fold-code pre>*').toggle();
+
+	$(".fold-code pre>*").hide();
+	$(".fold-code .special-line").show();
 };
 
 $(document).ready(enable_foldall);

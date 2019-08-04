@@ -222,7 +222,8 @@
   };
 
   Even.prototype.pjax = function () {
-    if (location.hostname === 'localhost' || this.hasPjax) return;
+      // if (location.hostname === 'localhost' || this.hasPjax) return;
+	  if (this.hasPjax) return;
     this.hasPjax = true;
 
     var that = this;

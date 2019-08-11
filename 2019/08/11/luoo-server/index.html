@@ -256,16 +256,12 @@
 </blockquote>
 <p>又一年夏天，<a href="http://www.luoo.net" target="_blank" rel="noopener">落网</a>服务器下线也有半年的时间了。</p>
 <p>去年夏天用Scrapy爬过落网所有的数据，一直想放到服务器上，但无奈在各种ddl的push下一直没能抽出时间…落的服务器虽然到期了，但大部分CDN都还活的好好的，然后用Django和ElasticSearch折腾了一通，这个落网搜索引擎就上线啦。<br><a id="more"></a></p>
-<center>
-<div style="width:80%;">
-<img src="/2019/08/11/luoo-server/screenshot.png" title="screenshot">
-</div>
-</center>
+<center><br><div style="width:80%;"><br><img src="/2019/08/11/luoo-server/screenshot.png" title="screenshot"><br></div><br></center>
 
 
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ol>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ol start="2">
 <li>全文搜索引擎（包含编号、标题、标签、文案、歌单内容）</li>
-<li>单曲搜索（搜索结果的列表可直接播放）</li>
+<li>期刊歌曲独立搜索（搜索结果的列表可直接播放）</li>
 <li>全部歌曲播放及下载（本站没有保存任何mp3文件，所有文件来自落网CDN）</li>
 <li>对应网易云链接（大部分，如发现少数不匹配可以告诉我）</li>
 </ol>
@@ -281,7 +277,7 @@
 <blockquote>
 <p>这就是一个墓地吧，安安静静的，愿每一个情怀都能叶落归根。</p>
 </blockquote>
-<h2 id="后记2：技术细节"><a href="#后记2：技术细节" class="headerlink" title="后记2：技术细节"></a>后记2：技术细节</h2><p>其实这个小玩意也没什么技术含量吧…<br>主要我买的搬瓦工VPS的流量用不完，挂了一个Blog依然用不完…现在这个VPS上跑了一个V2ray、一个Hexo、一个Django、一个ElasticSearch，真是辛苦服务器酱了。</p>
+<h2 id="后记2：技术细节"><a href="#后记2：技术细节" class="headerlink" title="后记2：技术细节"></a>后记2：技术细节</h2><p>其实这个小玩意也没什么技术含量吧…<br>主要我买的搬瓦工VPS的流量用不完，挂了一个Blog依然用不完…现在这个VPS上跑了一个V***y、一个Hexo、一个Django、一个ElasticSearch，真是辛苦服务器酱了。</p>
 <p>后端是Django+ElasticSearch，这个挺好办，不过话说回来这么点数据用ES真是杀鸡用牛刀了。另外最新版的ElasticSearch启动就默认2G堆栈，我的VPS只有0.5G内存啊…然后强制限制到128m + 跳过bootstrap checks（没事我这个小服务器应该没人会hack我.jpg）<br>前端就很痛苦了…本来对前端了解的就不多。试来试去最后选择在我Blog的主题Even上修改，就有了现在的样式。播放功能用的AmplitudeJS，分页等的逻辑用了网上一些巨巨的代码，在此一并感谢。就算这样东拼西凑也折腾了好久，前端工程师真的不容易啊向你们致敬。<br>最后部署Django也是一个很痛苦的过程，我用的uWSGI + Nginx一开始死活连不上，最后参考了<a href="https://code.ziqiangxuetang.com/django/django-nginx-deploy.html" target="_blank" rel="noopener">这一篇</a>才解决。</p>
 <p>既然谈到了服务器，作为一个Emacs用户，就用一个冷笑话收尾吧：</p>
 <blockquote>

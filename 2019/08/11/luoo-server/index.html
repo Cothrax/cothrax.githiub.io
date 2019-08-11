@@ -17,6 +17,8 @@
 
 
 
+  <meta name="description" content="To Luoo: 落网音乐搜索站上线">
+
 
 
 
@@ -38,7 +40,7 @@
 
 
 
-<link rel="canonical" href="http://cothrax.xyz/">
+<link rel="canonical" href="http://cothrax.xyz/2019/08/11/luoo-server/">
 
 
 
@@ -119,7 +121,7 @@
 
 
 	<script type="text/javascript" src="/js/src/custom.js"></script>
-    <title> Cothrax's </title>
+    <title> To Luoo: 落网音乐搜索站上线 - Cothrax's </title>
   </head>
   
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -213,15 +215,11 @@
           <div id="content" class="content">
             
   
-  <section id="posts" class="posts">
-    
-      
-        
   <article class="post">
     <header class="post-header">
       <h1 class="post-title">
         
-          <a class="post-link" href="/2019/08/11/luoo-server/">To Luoo: 落网音乐搜索站上线</a>
+          To Luoo: 落网音乐搜索站上线
         
       </h1>
 
@@ -242,213 +240,94 @@
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Features"><span class="toc-text">Features</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Coming-Features"><span class="toc-text">Coming Features</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记1"><span class="toc-text">后记1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记2：技术细节"><span class="toc-text">后记2：技术细节</span></a></li></ol>
+    </div>
+  </div>
+
 
 
     <div class="post-content">
       
-        
-        
-          
-        
-
-        
-          <blockquote>
+        <blockquote>
 <p>戳我访问：<a href="http://cothrax.xyz/luoo" target="_blank">http://cothrax.xyz/luoo</a></p>
 </blockquote>
 <p>又一年夏天，<a href="http://www.luoo.net" target="_blank" rel="noopener">落网</a>服务器下线也有半年的时间了。</p>
-<p>去年夏天用Scrapy爬过落网所有的数据，一直想放到服务器上，但无奈在各种ddl的push下一直没能抽出时间…落的服务器虽然到期了，但大部分CDN都还活的好好的，然后用Django和ElasticSearch折腾了一通，这个落网搜索引擎就上线啦。<br>
-          <div class="read-more">
-            <a href="/2019/08/11/luoo-server/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </p></div>
-
-    
-
-    
-
-  </article>
-
-      
-        
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2019/07/26/2019-sv-trainig/">2019 NOWCO Multi-University Training</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2019-07-26
-        </span>
-        
-          <span class="post-category">
-            
-              <a href="/categories/Algorithm/">Algorithm</a>
-            
-          </span>
-        
-        
-      </div>
-    </header>
-
-    
-    
+<p>去年夏天用Scrapy爬过落网所有的数据，一直想放到服务器上，但无奈在各种ddl的push下一直没能抽出时间…落的服务器虽然到期了，但大部分CDN都还活的好好的，然后用Django和ElasticSearch折腾了一通，这个落网搜索引擎就上线啦。<br><a id="more"></a></p>
+<center><br><div style="width:80%;"><br><img src="/2019/08/11/luoo-server/screenshot.png" title="screenshot"><br></div><br></center>
 
 
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>应姚神的要求写一点比赛<ruby>总结<rp> (</rp><rt>bī bī</rt><rp>) </rp></ruby>… 还有一些<ruby>题解<rp> (</rp><rt>kǒu hú</rt><rp>) </rp></ruby>啥的。</p>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ol start="2">
+<li>全文搜索引擎（包含编号、标题、标签、文案、歌单内容）</li>
+<li>单曲搜索（搜索结果的列表可直接播放）</li>
+<li>全部歌曲播放及下载（本站没有保存任何mp3文件，所有文件来自落网CDN）</li>
+<li>对应网易云链接（大部分，如发现少数不匹配可以告诉我）</li>
+</ol>
+<p>PS: 不知道搜什么的话，可以点随便逛逛</p>
+<h2 id="Coming-Features"><a href="#Coming-Features" class="headerlink" title="Coming Features"></a>Coming Features</h2><ol>
+<li>把994 - 999期补上</li>
+<li>为没有找到网易云链接的曲目添加其他链接（如虾米、qq音乐）</li>
+<li>（并不想做登录）</li>
+</ol>
+<h2 id="后记1"><a href="#后记1" class="headerlink" title="后记1"></a>后记1</h2><p>其实这件事起因于去年七夕，本来这是给xy的七夕礼物的一部分。<br>落陪伴了我的高中三年，不算长，但也保存了太多的回忆。说来挺可惜的，好好的一个落就这样消失了。不过，又一年七夕，落不在了，xy还在呀~</p>
+<p>其实落本身做的还是太粗糙了，将近90个G的数据爬下来也挺轻松，包括那些付费期刊的资源都是摆在那的静态链接…不过出于尊重原作者劳动成果的考虑，我没有把付费的资源放上来。<br>作为一个00后，我在这短暂的二十年里却看到了互联网世界中不可思议的变化，大多创业公司都是从免费做起，积累了一定的用户后再商业化，有很多成功的案例，像Keep、Finger，但也有太多的失败，落就是其中之一吧。其实落的模式本身就是很难收费的，版权的问题总归是一个定时炸弹，情怀不能当饭吃啊。</p>
+<p>不管怎样，最后剩下的也只有回忆呀，相信很多人也和我一样，能在落上找到很多很多曾经的记忆。其实也并没有打算做一个特别正式的东西，一方面服务器负载能力有限，另一方面自己对工程的东西也不太熟（<del>我以后大概会成为一个没用的数学家</del>）。</p>
 <blockquote>
-<p>RMK：感觉就是个流水账。</p>
+<p>这就是一个墓地吧，安安静静的，愿每一个情怀都能叶落归根。</p>
 </blockquote>
-          <div class="read-more">
-            <a href="/2019/07/26/2019-sv-trainig/" class="read-more-link">阅读更多</a>
-          </div>
-        
+<h2 id="后记2：技术细节"><a href="#后记2：技术细节" class="headerlink" title="后记2：技术细节"></a>后记2：技术细节</h2><p>其实这个小玩意也没什么技术含量吧…<br>主要我买的搬瓦工VPS的流量用不完，挂了一个Blog依然用不完…现在这个vps上跑了一个V2ray、一个Hexo、一个Django、一个ElasticSearch，真是辛苦服务器酱了。</p>
+<p>后端是Django+ElasticSearch，这个挺好办，不过话说回来这么点数据用ES真是杀鸡用牛刀了。另外最新版的ElasticSearch启动就默认2G堆栈，我的VPS只有0.5G内存啊…然后强制限制到128m + 跳过bootstrap checks（没事我这个小服务器应该没人会hack我.jpg）<br>前端就很痛苦了…本来对前端了解的就不多。试来试去最后选择在我Blog的主题Even上修改，就有了现在的样式。播放功能用的AmplitudeJS，分页等的逻辑用了网上一些巨巨的代码，在此一并感谢。就算这样东拼西凑也折腾了好久，前端工程师真的不容易啊向你们致敬。<br>最后部署Django也是一个很痛苦的过程，我用的uWSGI + Nginx一开始死活连不上，最后参考了<a href="https://code.ziqiangxuetang.com/django/django-nginx-deploy.html" target="_blank" rel="noopener">这一篇</a>才解决。</p>
+<p>既然谈到了服务器，作为一个Emacs用户，就用一个冷笑话收尾吧：</p>
+<blockquote>
+<p>When does an Emacs user use Vim? To change a server config via ssh. - <a href="https://swizec.com/blog/cool-thing-thursday-emacs-tramp-mode/swizec/5646" target="_blank" rel="noopener">Swizec Teller</a></p>
+</blockquote>
+
       
     </div>
 
     
-
-    
-
-  </article>
-
       
-        
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2019/01/10/graph-realization-problem/">Graph Realization Problem</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2019-01-10
-        </span>
-        
-          <span class="post-category">
-            
-              <a href="/categories/Algorithm/">Algorithm</a>
-            
-          </span>
-        
-        
-      </div>
-    </header>
-
-    
-    
-
-
-    <div class="post-content">
       
-        
-        
-          
-        
-
-        
-          <p>Codeforces Good Bye 2018中的<a href="https://codeforces.com/contest/1091/problem/E" target="_blank" rel="noopener">E</a>是一道阅读理解题，题面中的给出了到<a href="https://en.wikipedia.org/wiki/Graph\_realization\_problem" target="_blank" rel="noopener">wiki</a>的链接，但比赛时我怎么有心情读一大段英文wiki…<br>这道题的背景知识叫<strong>可简单图化问题</strong>(Graph Realization)，指给定一个有限序列 $D=(d_1,d_2,\cdots,d_n)$ ，是否存在一个无自环的无向图G，使得G中顶点的度数构成的序列为$D$。</p>
-<blockquote>
-<p>RMK (2019-06-24)：原来这是离散数学的作业题…</p>
-</blockquote>
-          <div class="read-more">
-            <a href="/2019/01/10/graph-realization-problem/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-      
-        
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/06/27/after-cee/">Fight Back</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-06-27
-        </span>
-        
-          <span class="post-category">
-            
-              <a href="/categories/Nothing/">Nothing</a>
-            
-          </span>
-        
-        
-      </div>
-    </header>
-
-    
-    
 
 
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <style>
-#old-blog-link {
-    cursor: pointer;
-}
-</style>
-
-<p>高考结束了。</p>
-<p>掐指一算，离上一次AC也有600多天的时间了，以致东大机试时连裸的KMP都看不出来了…交大笔试也没过，自招没占到任何便宜，最后裸分出镜（捂脸<br>分数不尴不尬，卡在中间，想了想就去了UCAS。综评签了之后还跟招办老师纠缠了好久，那老师大概还没遇到过像我这么奇葩的学生…也怪我没认真看招生宣传。<br>从走进考场到查到分数，自信、焦虑、庆幸、担忧、憬然…揉在一起，最后剩下的也只是敲击键盘的平静。不过感触最深的，有两段对话。<br>
-          <div class="read-more">
-            <a href="/2018/06/27/after-cee/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </p></div>
-
-    
-
-    
-
-  </article>
 
       
       
-  <nav class="pagination">
     
+
+    
+      <footer class="post-footer">
+        
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2019/07/26/2019-sv-trainig/">
+        <span class="next-text nav-default">2019 NOWCO Multi-University Training</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
 
+      </footer>
     
-  </section>
+
+  </article>
+
 
           </div>
           
+  <div class="comments" id="comments">
+    
+      <div id="vcomments"></div>
+    
+  </div>
+
 
         </div>
       </main>

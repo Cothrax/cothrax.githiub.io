@@ -243,7 +243,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Features"><span class="toc-text">Features</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Coming-Features"><span class="toc-text">Coming Features</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记1"><span class="toc-text">后记1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记2：技术细节"><span class="toc-text">后记2：技术细节</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Features"><span class="toc-text">Features</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#全文搜索引擎"><span class="toc-text">全文搜索引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单曲搜索"><span class="toc-text">单曲搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#歌曲播放及下载"><span class="toc-text">歌曲播放及下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网易云链接"><span class="toc-text">网易云链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Coming-Features"><span class="toc-text">Coming Features</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记1"><span class="toc-text">后记1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记2：技术细节"><span class="toc-text">后记2：技术细节</span></a></li></ol>
     </div>
   </div>
 
@@ -259,12 +259,23 @@
 <center><br><div style="width:80%;"><br><img src="/2019/08/11/luoo-server/screenshot.png" title="screenshot"><br></div><br></center>
 
 
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ol start="2">
-<li>全文搜索引擎（包含编号、标题、标签、文案、歌单内容）</li>
-<li>期刊歌曲独立搜索（搜索结果的列表可直接播放）</li>
-<li>全部歌曲播放及下载（本站没有保存任何mp3文件，所有文件来自落网CDN）</li>
-<li>对应网易云链接（大部分，如发现少数不匹配可以告诉我）</li>
-</ol>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><h3 id="全文搜索引擎"><a href="#全文搜索引擎" class="headerlink" title="全文搜索引擎"></a>全文搜索引擎</h3><p>支持对第1-993期的全文搜索功能（包含编号、标题、标签、文案、歌单内容）</p>
+<center><br><div style="width:80%;"><br><img src="/2019/08/11/luoo-server/search.png" title="搜索非洲的结果"><br></div><br></center>
+
+
+<h3 id="单曲搜索"><a href="#单曲搜索" class="headerlink" title="单曲搜索"></a>单曲搜索</h3><p>支持对期刊歌曲的独立搜索，搜索结果的列表可直接播放。例如我搜最喜欢的蝎子：</p>
+<center><br><div style="width:80%;"><br><img src="/2019/08/11/luoo-server/scorpions.png" title="搜索scorpions的结果"><br></div><br></center>
+
+
+<h3 id="歌曲播放及下载"><a href="#歌曲播放及下载" class="headerlink" title="歌曲播放及下载"></a>歌曲播放及下载</h3><p>注：本站没有保存任何mp3文件，所有文件来自落网CDN</p>
+<center><br><div style="width:80%;"><br><img src="/2019/08/11/luoo-server/page.png" title="第734期"><br></div><br></center>
+
+<p>手机端也做了一些调整：</p>
+<center><br><div style="width:80%;"><br><img src="/2019/08/11/luoo-server/mobile.png" title="第734期"><br></div><br></center>
+
+
+
+<h3 id="网易云链接"><a href="#网易云链接" class="headerlink" title="网易云链接"></a>网易云链接</h3><p>由于落网的CDN也迟早会失效，我在大部分歌曲后面提供了对应的网易云链接，单击歌名后的网易云图标即可。会有少数错误，可以评论告知我。</p>
 <p>PS: 不知道搜什么的话，可以点随便逛逛</p>
 <h2 id="Coming-Features"><a href="#Coming-Features" class="headerlink" title="Coming Features"></a>Coming Features</h2><ol>
 <li>把994 - 999期补上</li>
@@ -273,11 +284,11 @@
 </ol>
 <h2 id="后记1"><a href="#后记1" class="headerlink" title="后记1"></a>后记1</h2><p>其实这件事起因于去年七夕，本来这是给xy的七夕礼物的一部分。<br>落陪伴了我的高中三年，不算长，但也保存了太多的回忆。说来挺可惜的，好好的一个落就这样消失了。不过，又一年七夕，落不在了，xy还在呀~</p>
 <p>其实落本身做的还是太粗糙了，将近90个G的数据爬下来也挺轻松，包括那些付费期刊的资源都是摆在那的静态链接…不过出于尊重原作者劳动成果的考虑，我没有把付费的资源放上来。<br>作为一个00后，我在这短暂的二十年里却看到了互联网世界中不可思议的变化，大多创业公司都是从免费做起，积累了一定的用户后再商业化，有很多成功的案例，像Keep、Finger，但也有太多的失败，落就是其中之一吧。其实落的模式本身就是很难收费的，版权的问题总归是一个定时炸弹，情怀不能当饭吃啊。</p>
-<p>不管怎样，最后剩下的也只有回忆呀，相信很多人也和我一样，能在落上找到很多很多曾经的记忆。其实也并没有打算做一个特别正式的东西，一方面服务器负载能力有限，另一方面自己对工程的东西也不太熟（<del>我以后大概会成为一个没用的数学家</del>）。</p>
+<p>不管怎样，最后剩下的也只有回忆呀，相信很多人也和我一样，能在落上找到很多很多曾经的记忆。其实也并没有打算做一个特别正式的东西，一方面服务器负载能力有限，另一方面自己对开发这方面也不太熟（<del>我以后大概会成为一个没用的数学家</del>）。</p>
 <blockquote>
 <p>这就是一个墓地吧，安安静静的，愿每一个情怀都能叶落归根。</p>
 </blockquote>
-<h2 id="后记2：技术细节"><a href="#后记2：技术细节" class="headerlink" title="后记2：技术细节"></a>后记2：技术细节</h2><p>其实这个小玩意也没什么技术含量吧…<br>主要我买的搬瓦工VPS的流量用不完，挂了一个Blog依然用不完…现在这个VPS上跑了一个V***y、一个Hexo、一个Django、一个ElasticSearch，真是辛苦服务器酱了。</p>
+<h2 id="后记2：技术细节"><a href="#后记2：技术细节" class="headerlink" title="后记2：技术细节"></a>后记2：技术细节</h2><p>其实这个小玩意也没什么技术含量吧…<br>主要我买的搬瓦工VPS的流量用不完，挂了一个Blog依然用不完…现在这个VPS上跑了一个V2***、一个Hexo、一个Django、一个ElasticSearch，真是辛苦服务器酱了呢~</p>
 <p>后端是Django+ElasticSearch，这个挺好办，不过话说回来这么点数据用ES真是杀鸡用牛刀了。另外最新版的ElasticSearch启动就默认2G堆栈，我的VPS只有0.5G内存啊…然后强制限制到128m + 跳过bootstrap checks（没事我这个小服务器应该没人会hack我.jpg）<br>前端就很痛苦了…本来对前端了解的就不多。试来试去最后选择在我Blog的主题Even上修改，就有了现在的样式。播放功能用的AmplitudeJS，分页等的逻辑用了网上一些巨巨的代码，在此一并感谢。就算这样东拼西凑也折腾了好久，前端工程师真的不容易啊向你们致敬。<br>最后部署Django也是一个很痛苦的过程，我用的uWSGI + Nginx一开始死活连不上，最后参考了<a href="https://code.ziqiangxuetang.com/django/django-nginx-deploy.html" target="_blank" rel="noopener">这一篇</a>才解决。</p>
 <p>既然谈到了服务器，作为一个Emacs用户，就用一个冷笑话收尾吧：</p>
 <blockquote>

@@ -296,21 +296,22 @@
 <h3 id="网易云链接"><a href="#网易云链接" class="headerlink" title="网易云链接"></a>网易云链接</h3><p>由于落网的CDN也迟早会失效，我在大部分歌曲后面提供了对应的网易云链接，单击歌名后的网易云图标即可。会有少数错误，可以评论告知我。</p>
 <p>PS: 不知道搜什么的话，可以点随便逛逛</p>
 <h2 id="Coming-Features"><a href="#Coming-Features" class="headerlink" title="Coming Features"></a>Coming Features</h2><ol>
-<li>把994 - 999期补上</li>
-<li>为没有找到网易云链接的曲目添加其他链接（如虾米、qq音乐）</li>
-<li>（并不想做登录）</li>
+<li><del>把994 - 999期补上</del></li>
+<li><del>为没有找到网易云链接的曲目添加其他链接（如虾米、qq音乐）</del></li>
+<li>咕咕咕</li>
 </ol>
 <h2 id="后记1"><a href="#后记1" class="headerlink" title="后记1"></a>后记1</h2><p>其实落本身做的还是太粗糙了，将近90个G的数据爬下来也挺轻松，包括那些付费期刊的资源都是摆在那的静态链接…不过出于尊重原作者劳动成果的考虑，我没有把付费的资源放上来。<br>作为一个00后，我在这短暂的二十年里却看到了互联网世界中不可思议的变化，大多创业公司都是从免费做起，积累了一定的用户后再商业化，有很多成功的案例，像Keep、Finger，但也有太多的失败，落就是其中之一吧。其实落的模式本身就是很难收费的，版权的问题总归是一个定时炸弹，情怀不能当饭吃啊。</p>
 <p>不管怎样，最后剩下的也只有回忆呀，相信很多人也和我一样，能在落上找到很多很多曾经的记忆。其实也并没有打算做一个特别正式的东西，一方面服务器负载能力有限，另一方面自己对开发这方面也不太熟（<del>我以后大概会成为一个没用的数学家</del>）。</p>
 <blockquote>
 <p>这就是一个墓地吧，安安静静的，愿每一个情怀都能叶落归根。</p>
 </blockquote>
-<h2 id="后记2：技术细节"><a href="#后记2：技术细节" class="headerlink" title="后记2：技术细节"></a>后记2：技术细节</h2><p>其实这个小玩意也没什么技术含量吧…<br>主要我买的搬瓦工VPS的流量用不完，挂了一个Blog依然用不完…现在这个VPS上跑了一个V2***、一个Hexo、一个Django、一个ElasticSearch，真是辛苦服务器酱了呢~</p>
+<h2 id="后记2：技术细节"><a href="#后记2：技术细节" class="headerlink" title="后记2：技术细节"></a>后记2：技术细节</h2><p>其实这个小玩意也没什么技术含量吧…<br>主要我买的搬瓦工VPS的流量用不完，挂了一个Blog依然用不完…现在这个VPS上跑了一个Hexo、一个Django、一个ElasticSearch，真是辛苦服务器酱了呢~</p>
 <p>后端是Django+ElasticSearch，这个挺好办，不过话说回来这么点数据用ES真是杀鸡用牛刀了。另外最新版的ElasticSearch启动就默认2G堆栈，我的VPS只有0.5G内存啊…然后强制限制到128m + 跳过bootstrap checks（没事我这个小服务器应该没人会hack我.jpg）<br>前端就很痛苦了…本来对前端了解的就不多。试来试去最后选择在我Blog的主题Even上修改，就有了现在的样式。播放功能用的AmplitudeJS，分页等的逻辑用了网上一些巨巨的代码，在此一并感谢。就算这样东拼西凑也折腾了好久，前端工程师真的不容易啊向你们致敬。<br>最后部署Django也是一个很痛苦的过程，我用的uWSGI + Nginx一开始死活连不上，最后参考了<a href="https://code.ziqiangxuetang.com/django/django-nginx-deploy.html" target="_blank" rel="noopener">这一篇</a>才解决。</p>
 <p>既然谈到了服务器，作为一个Emacs用户，就用一个冷笑话收尾吧：</p>
 <blockquote>
 <p>When does an Emacs user use Vim? To change a server config via ssh. - <a href="https://swizec.com/blog/cool-thing-thursday-emacs-tramp-mode/swizec/5646" target="_blank" rel="noopener">Swizec Teller</a></p>
 </blockquote>
+<center><br><div style="width:50%;"><br><img src="/2019/08/11/luoo-server/rew.jpg" title="偷偷放一个二维码"><br></div><br></center>
 
       
     </div>
@@ -422,7 +423,7 @@
      
       2018 - 
     
-    2020
+    2021
 
     <span class="heart">
       <i class="iconfont icon-heart"></i>
